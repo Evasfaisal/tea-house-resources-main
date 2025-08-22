@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class=" relative h-[100vh] bg-[#f4f5f7]">
+
+    <div class="flex justify-center items-center h-full ">
+
+        <img src="./assets/Group.png" alt="" class="absolute mb-100 ml-0">
+        <img src="./assets/bg.png" alt="" class="absolute mb-70 ml-0">
+
+<!-- form field -->
+        <div>
+            <form class="fieldset   rounded-box w-[402px] bg-[#ffffff] p-8 ">
+                <label class="label font-bold text-black">Mobile Number</label>
+                <input type="email" id="phone-num" class="input rounded-lg mt-2" placeholder="Enter Phone" />
+
+                <label class="label font-bold mt-4 text-black">4 Digit Pin</label>
+                <input type="password" id="digit-num" class="input rounded-lg mt-2" placeholder="Enter 4 Digit Pin" />
+
+                <button id="buttonid" class="btn rounded-lg bg-blue-700 text-white mt-4 ">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- scripts js -->
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
