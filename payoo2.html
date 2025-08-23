@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="banner-section h-full max-w-lg mx-auto  ">
+
+        <!-- nav section -->
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start p-2">
+                <div class="w-11 mr-3">
+                    <img src="./assets/Group.png" alt="">
+                </div>
+                <div>
+                    <p class="font-bold">$<span id="cash">45000</span></p>
+                    <p>Available Balance</p>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+            </div>
+            <div class="navbar-end">
+
+                <button class="btn"><i class="fa-solid  fa-arrow-right-from-bracket"></i> Logout</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--  welcome section-->
+
+    <section class="h-full max-w-lg mx-auto  grid   rounded-br-lg rounded-bl-lg">
+
+        <div class="p-4">
+            <h1 class="font-bold my-3 ">🔥 Welcome to Payooo!</h1>
+            <p>Enjoy easy and convenient financial services with us. <br> Cashout charge is low and</p>
+        </div>
+
+
+        <div class=" grid grid-cols-3 gap-4 p-4">
+
+            <div id="monyadd-sec" class="shadow-sm rounded-lg w-[120px] h-[80px] flex justify-center items-center ml-3">
+                <div><img src="./assets/wallet1.png" alt="" class="ml-7">
+                    <p class="mt-2">Add Money</p>
+                </div>
+
+            </div>
+            <div id="Cashout-sec" class="shadow-sm rounded-lg w-[120px] h-[80px] flex justify-center items-center ml-3">
+                <div><img src="./assets/wallet1.png" alt="" class="ml-4">
+                    <p class="mt-2">Cashout</p>
+                </div>
+
+            </div>
+            <div class="shadow-sm rounded-lg w-[120px] h-[80px] flex justify-center items-center ml-3">
+                <div><img src="./assets/wallet1.png" alt="" class="ml-10">
+                    <p class="mt-2">Transfer Money</p>
+                </div>
+
+            </div>
+            <div class="shadow-sm rounded-lg w-[120px] h-[80px] flex justify-center items-center ml-3">
+                <div><img src="./assets/wallet1.png" alt="" class="ml-5">
+                    <p class="mt-2">Get Bonus</p>
+                </div>
+
+            </div>
+            <div class="shadow-sm rounded-lg w-[120px] h-[80px] flex justify-center items-center ml-3">
+                <div><img src="./assets/wallet1.png" alt="" class="ml-3">
+                    <p class="mt-2">Pay Bill</p>
+                </div>
+
+            </div>
+            <div class="shadow-sm rounded-lg w-[120px] h-[80px] flex justify-center items-center ml-3">
+                <div><img src="./assets/wallet1.png" alt="" class="ml-6">
+                    <p class="mt-2">Transactions</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- add mony section -->
+    <section class="max-w-lg mx-auto ">
+
+
+        <fieldset id="form1" class="fieldset bg-base-200 rounded-box w-[440px]  p-4 ml-7 mt-2 ">
+            <legend class="fieldset-legend font-bold text-[16px]">Add mony</legend>
+
+            <form class="">
+                <label class="font-bold label ml-2 my-2">Select A Bank</label>
+                <br>
+                <select class="select rounded-lg w-[380px] ml-2">
+                    <option>Select Bank</option>
+                    <option>Janata Bank</option>
+                    <option>Desh Bank</option>
+                    <option>Sonali bank</option>
+                </select>
+                <br>
+                <label class="font-bold label ml-2 my-2">Bank Account Numbere</label>
+                <br>
+                <input id="numbe-11" type="text" class="input rounded-lg w-[380px] ml-2"
+                    placeholder="Enter 11 digit account number" />
+                <br>
+                <label class="font-bold label ml-2 my-2">Amount to Add</label>
+                <br>
+                <input id="Add-amount" type="text" class="input rounded-lg w-[380px] ml-2" placeholder="Add Amount to withdraw" />
+                <br>
+                <label class="font-bold label ml-2 my-2">Pin Number</label>
+                <br>
+                <input id="digit-4" type="text" class="input rounded-lg w-[380px] ml-2" placeholder="Enter 4 digit pin number" />
+
+                <button id="add-button"
+                    class="rounded-full w-[280px] h-[50px] ml-11 mt-5 bg-blue-700 text-white font-bold text-[15px]">Add
+                    mony</button>
+            </form>
+
+        </fieldset>
+
+        <fieldset id="form2" class="fieldset bg-base-200 rounded-box w-[440px]  p-4 ml-7 mt-2 hidden">
+            <legend class="fieldset-legend font-bold text-[16px]">Cashout</legend>
+
+            <form class="">
+                <label class="font-bold label ml-2 my-2">Select A Bank</label>
+                <br>
+                <select class="select rounded-lg w-[380px] ml-2">
+                    <option>Select Bank</option>
+                    <option>Janata Bank</option>
+                    <option>Desh Bank</option>
+                    <option>Sonali bank</option>
+                </select>
+                <br>
+                <label class="font-bold label ml-2 my-2">Bank Account Numbere</label>
+                <br>
+                <input id="numbe-11-2" type="text" class="input rounded-lg w-[380px] ml-2"
+                    placeholder="Enter 11 digit account number" />
+                <br>
+                <label class="font-bold label ml-2 my-2">Amount to Add</label>
+                <br>
+                <input id="Add-amount-2" type="text" class="input rounded-lg w-[380px] ml-2" placeholder="Add Amount to withdraw" />
+                <br>
+                <label class="font-bold label ml-2 my-2">Pin Number</label>
+                <br>
+                <input id="digit-4-2" type="text" class="input rounded-lg w-[380px] ml-2" placeholder="Enter 4 digit pin number" />
+
+                <button id="add-button2"
+                    class="rounded-full w-[280px] h-[50px] ml-11 mt-5 bg-blue-700 text-white font-bold text-[15px]">Cashout</button>
+            </form>
+
+        </fieldset>
+
+
+
+
+    </section>
+
+
+    <script src="index2.js"></script>
+</body>
+
+</html> 
